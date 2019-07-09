@@ -12,4 +12,22 @@ class Config {
     public static $dbName = 'instagramapi';
     public static $dbLogin = 'root';
     public static $dbPassword = '123';
+
+    //
+    // Доступы к Инстаграму
+    //
+    public static $instagramLogin = '???';
+    public static $instagramPassword = '???';
+
+    //
+    // Настройки воркера
+    //
+    public static $workerListenHost = '127.0.0.1';
+    public static $workerPort = '1307';
+    public static $workerTimeout = 5;
+
+    /**
+     * @var bool Выводить отладочные сообщения
+     */
+    public static $debug = true;
 }

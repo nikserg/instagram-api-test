@@ -1,6 +1,8 @@
 {
     "require": {
         "mgp25/instagram-php": "^6.1",
-        "catfan/medoo": "^1.6"
+        "catfan/medoo": "^1.6",
+        "react/http": "^0.8.4",
+        "monolog/monolog": "^1.24"
     }
 }

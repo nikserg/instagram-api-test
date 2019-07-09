@@ -1,0 +1,15 @@
+.messages .item img, .messages .item video{
+    max-width: 150px;
+    max-height: 150px;
+}
+.userpic {
+    max-width: 100px;
+}
+
+.table {
+    border-collapse: collapse;
+}
+.table td {
+    border: 1px #CCC solid;
+    padding: 5px;
+}
