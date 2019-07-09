@@ -1,5 +1,6 @@
 {
     "require": {
-        "mgp25/instagram-php": "^6.1"
+        "mgp25/instagram-php": "^6.1",
+        "catfan/medoo": "^1.6"
     }
 }
