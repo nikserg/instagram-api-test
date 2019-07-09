@@ -2,5 +2,5 @@
 
 ## Установка
 * `composer install` в папке приложения
-* Переименовать `config.php.example` в `Config.php` и внести данные подключения к БД
+* Переименовать `config.php.example` в `config.php` и внести данные подключения к БД
 * Запустить воркер: `php worker.php & `
