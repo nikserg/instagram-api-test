@@ -4,15 +4,6 @@
  * Конфигурация БД и приложения
  */
 class Config {
-
-    //
-    // Доступы к БД
-    //
-    public static $dbHost = 'localhost';
-    public static $dbName = 'instagramapi';
-    public static $dbLogin = 'root';
-    public static $dbPassword = '123';
-
     //
     // Доступы к Инстаграму
     //
