@@ -3,17 +3,21 @@ require_once 'vendor/autoload.php';
 require_once 'config.php';
 
 /**
- * Функции для работы с демоном Инстаграма
+ * Функции для получения данных у демона Инстаграма
+ *
  *
  * @see IGWorker
  */
 class Api {
     /**
-     * @var \GuzzleHttp\Client
+     * @var \GuzzleHttp\Client HTTP-клиент
      */
     private static $client;
 
     /**
+     * Получить HTTP-клиент
+     *
+     *
      * @return \GuzzleHttp\Client
      */
     private static function client() {

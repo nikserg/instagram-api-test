@@ -13,7 +13,7 @@
         ?>
         <tr>
             <td><?php echo $item->getUserId(); ?></td>
-            <td><?php echo Lib::renderTimestamp($item->getTimestamp()); ?></td>
+            <td><?php echo View::renderTimestamp($item->getTimestamp()); ?></td>
             <td>
                 <?php include "item.php"; ?>
             </td>

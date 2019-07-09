@@ -1,6 +1,8 @@
 <?php
 /**
- * Демон для общения с Инстаграм
+ * Демон для общения с Инстаграмом
+ *
+ * Крутится в фоне, имитируя запросы к сайту, и отвечает на HTTP-запросы.
  *
  * @see https://raw.githubusercontent.com/mgp25/Instagram-API/master/examples/realtimeHttp.php
  */
@@ -160,14 +162,20 @@ class IGWorker
         // Log command with its params.
         $this->_logger->info(sprintf('Received command %s', $command), $params);
         switch ($command) {
+
+            //Спиоск диалогов
             case '/threads':
                 return new \React\Http\Response(200, [], $this->_instagram->direct->getInbox()->asJson());
+
+            //Конкретный диалог
             case '/thread':
                 $thread = $this->_instagram->direct->getThread($params['id']);
                 if (!$thread) {
                     return new \React\Http\Response(404, [], 'Диалог не найден');
                 }
                 return new \React\Http\Response(200, [], $thread->asJson());
+
+
             case '/ping':
                 return new \React\Http\Response(200, [], 'pong');
             case '/stop':

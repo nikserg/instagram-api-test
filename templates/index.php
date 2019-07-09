@@ -26,7 +26,7 @@
             </td>
             <td>
                 <?php
-                echo Lib::renderTimestamp($thread->getLastPermanentItem()->getTimestamp());
+                echo View::renderTimestamp($thread->getLastPermanentItem()->getTimestamp());
                 ?>
             </td>
             <td>

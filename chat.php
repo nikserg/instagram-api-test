@@ -1,5 +1,5 @@
 <?php
-require_once "Lib.php";
+require_once "View.php";
 require_once "Api.php";
 
 $id = $_GET['id'];
@@ -8,4 +8,4 @@ if (!$id) {
 }
 
 $thread = Api::getThread($id);
-Lib::render('chat.php', ['thread' => $thread->getThread()]);
+View::render('chat.php', ['thread' => $thread->getThread()]);
