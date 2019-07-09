@@ -5,7 +5,7 @@
  * @see https://raw.githubusercontent.com/mgp25/Instagram-API/master/examples/realtimeHttp.php
  */
 require_once "vendor/autoload.php";
-require_once "Config.php";
+require_once "config.php";
 
 // Create main event loop.
 $loop = \React\EventLoop\Factory::create();
